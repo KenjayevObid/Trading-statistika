@@ -1,15 +1,17 @@
 .App {
   height: 100vh;
   background-color: rgb(56, 59, 59);
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .price {
   font-size: 30px;
   color: red;
   margin-left: 50px;
+  
 }
+
 .num {
   font-size: 50px;
   color: rgb(0, 255, 34);
@@ -17,11 +19,24 @@
 .number {
   display: flex;
   position: absolute;
-  top: 40px;
+  top: 80px;
   left: 100px;
   align-items: center;
 }
 .chart-timeline {
   display: flex;
   position: relative;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .price {
+    font-size: 15px;
+    margin-left: 20px;
+  }
+ 
+  .num {
+    font-size: 20px;
+    color: rgb(0, 255, 34);
+  }
 }

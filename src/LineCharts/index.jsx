@@ -9,7 +9,6 @@ const Column = () => {
       id: "area-datetime",
       name: "Aholi soni",
       type: "area",
-      height: 350,
       background: "black",
       zoom: {
         autoScaleYaxis: true,
@@ -20,7 +19,7 @@ const Column = () => {
       align: "center",
       style: {
         color: "white",
-        fontSize: "20px",
+        fontSize: "12px",
       },
     },
     dataLabels: {
@@ -63,25 +62,19 @@ const Column = () => {
 
   return (
     <>
-    <div className="card">
     <button onClick={()=>  navigate("/")}>Orqaga</button>
       <div id="chart" className="chart">
-        <div id="chart-timeline" className="chart-timeline">
           <ReactApexChart
             options={options}
             series={series}
             type="area"
-            width={1000}
-            height={500}
             />
           <div className="number">
             <h1 className="num">5872000+</h1>
             <span className="price">15.300 (kv.km)</span>
           </div>
         </div>
-      </div>
       <div id="html-dist"></div>
-    </div>
             </>
   );
 };

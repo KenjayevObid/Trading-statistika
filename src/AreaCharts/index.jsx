@@ -86,7 +86,6 @@ const AreaCharts = () => {
     chart: {
       height: 350,
       type: "treemap",
-
       events: {
         click: function (event, chartContext, { dataPointIndex }) {
           navigate("/viloyat");
@@ -100,7 +99,6 @@ const AreaCharts = () => {
             return value;
           },
         },
-     
       },
     },
 
@@ -130,18 +128,13 @@ const AreaCharts = () => {
         enableShades: false,
       },
     },
+
   };
 
   return (
     <div>
       <div id="chart">
-        <ReactApexChart
-          options={options}
-          series={series}
-          type="treemap"
-          width={800}
-          height={700}
-        />
+        <ReactApexChart options={options} series={series} type="treemap" />
       </div>
       <div id="html-dist"></div>
     </div>
@@ -149,5 +142,3 @@ const AreaCharts = () => {
 };
 
 export default AreaCharts;
-
-
