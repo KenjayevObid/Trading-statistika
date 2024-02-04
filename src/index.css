@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  height: 100vh;
+  background-color: rgb(56, 59, 59);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.price {
+  font-size: 30px;
+  color: red;
+  margin-left: 50px;
+}
+.num {
+  font-size: 50px;
+  color: rgb(0, 255, 34);
+}
+.number {
+  display: flex;
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  align-items: center;
+}
+.chart-timeline {
+  display: flex;
+  position: relative;
 }
