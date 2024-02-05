@@ -1,4 +1,4 @@
-import AreaCharts from "./AreaCharts/index";
+import HeatMap from "./HeatMap";
 import LineCharts from "./LineCharts/index";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<AreaCharts />} />
-          <Route path="/viloyat" element={<LineCharts />} />
+          <Route path="/" element={<HeatMap />} />
+          <Route path="/company" element={<LineCharts />} />
         </Routes>
       </Router>
     </div>

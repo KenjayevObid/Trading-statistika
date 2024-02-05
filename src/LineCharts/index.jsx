@@ -1,9 +1,13 @@
 import React  from "react";
 import ReactApexChart from "react-apexcharts";
-import { useNavigate } from "react-router-dom";
+import seriesData from "../Data";
 
-const Column = () => {
-  const navigate = useNavigate();
+
+export const getId = (id) => {
+  const Data =  seriesData[0].data;
+   console.log(Data[id]);
+ }
+const LineCharts = () => {
   const options = {
     chart: {
       id: "area-datetime",
@@ -15,11 +19,11 @@ const Column = () => {
       },
     },
     title: {
-      text: "Toshkent viloyati",
+      text: 'hjghj',
       align: "center",
       style: {
         color: "white",
-        fontSize: "12px",
+        fontSize: "1vw",
       },
     },
     dataLabels: {
@@ -62,7 +66,6 @@ const Column = () => {
 
   return (
     <>
-    <button onClick={()=>  navigate("/")}>Orqaga</button>
       <div id="chart" className="chart">
           <ReactApexChart
             options={options}
@@ -70,8 +73,8 @@ const Column = () => {
             type="area"
             />
           <div className="number">
-            <h1 className="num">5872000+</h1>
-            <span className="price">15.300 (kv.km)</span>
+            <h1 className="num">5872000</h1>
+            <span className="price">-3.5544654</span>
           </div>
         </div>
       <div id="html-dist"></div>
@@ -79,7 +82,7 @@ const Column = () => {
   );
 };
 
-export default Column;
+export default LineCharts;
 
 var series = [
   {

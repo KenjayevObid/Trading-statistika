@@ -1,42 +1,57 @@
 .App {
-  height: 100vh;
-  background-color: rgb(56, 59, 59);
-  /* display: flex;
+  /* height: 100vh; */
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  /* align-items: center; */
+}
+body{
+  background-color: rgb(51, 53, 53);
+
 }
 .price {
-  font-size: 30px;
+  font-size: 3vw;
   color: red;
   margin-left: 50px;
-  
 }
 
 .num {
-  font-size: 50px;
+  font-size: 5vw;
   color: rgb(0, 255, 34);
 }
 .number {
   display: flex;
   position: absolute;
-  top: 80px;
-  left: 100px;
+  top: 8vw;
+  left: 10vw;
   align-items: center;
 }
 .chart-timeline {
   display: flex;
   position: relative;
-
 }
-
+.color-list {
+  display: flex;
+  font-size: 2vw;
+  width: 100%;
+  padding: 0, 100px;
+}
+.chart {
+  position: relative;
+  width: 70vw;
+  height: 600px;
+}
 @media only screen and (max-width: 600px) {
   .price {
     font-size: 15px;
     margin-left: 20px;
   }
- 
+
   .num {
     font-size: 20px;
     color: rgb(0, 255, 34);
+  }
+  .chart {
+    position: relative;
+    width: 95vw;
   }
 }
