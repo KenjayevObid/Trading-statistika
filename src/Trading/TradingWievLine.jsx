@@ -49,7 +49,7 @@ export default function TradingViewWidget() {
   );
 
   return (
-    <div className='tradingview-widget-container'>
+    <div className='tradingview-widget-container'  style={{margin: "auto", marginTop: '50px'}}>
       <div id='tradingview_d7374' />      
     </div>
   );

@@ -24,7 +24,7 @@ function TradingViewWidget() {
           "isDataSetEnabled": true,
           "isZoomEnabled": true,
           "hasSymbolTooltip": false,
-          "width": 1000,
+          "width": 1200,
           "height": 700
         }`;
       container.current.appendChild(script);
@@ -33,7 +33,7 @@ function TradingViewWidget() {
   );
 
   return (
-    <div className="tradingview-widget-container" ref={container}>
+    <div className="tradingview-widget-container" style={{margin: "auto", marginTop: '50px'}} ref={container}>
       <div className="tradingview-widget-container__widget"></div>
     </div>
   );
