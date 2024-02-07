@@ -1,8 +1,5 @@
 .App {
-  /* height: 100vh; */
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
+
 }
 body{
   background-color: rgb(51, 53, 53);
@@ -54,4 +51,31 @@ body{
     position: relative;
     width: 95vw;
   }
+}
+
+.navbar {
+  background-color: #55dcee;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline;
+  margin: 0 100px;
+}
+
+.nav-link {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ccc;
 }

@@ -1,23 +1,45 @@
 import React  from "react";
 import ReactApexChart from "react-apexcharts";
-import seriesData from "../Data";
 
 
-export const getId = (id) => {
-  const Data =  seriesData[0].data;
-   console.log(Data[id]);
- }
+
 const LineCharts = () => {
   const options = {
     chart: {
       id: "area-datetime",
       name: "Aholi soni",
       type: "area",
-      background: "black",
-      zoom: {
-        autoScaleYaxis: true,
-      },
+       
     },
+    
+grid: {
+  borderColor: "#6e7eaa",
+  strokeDashArray: 5,
+  position: "front",
+  xaxis: {
+      lines: {
+          show: true,
+      }
+  },   
+  yaxis: {
+      lines: {
+          show: true
+      }
+  },  
+  row: {
+      colors: undefined,
+      opacity: 0.5
+  },  
+  column: {
+      colors: undefined,
+      opacity: 0.5
+  },  
+  padding: {
+      // top: 200,
+      // bottom: 200,
+  },  
+},
+
     title: {
       text: 'hjghj',
       align: "center",
@@ -62,6 +84,10 @@ const LineCharts = () => {
         stops: [0, 100],
       },
     },
+ 
+    theme: {
+      mode: "dark"
+  }
   };
 
   return (

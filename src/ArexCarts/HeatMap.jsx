@@ -2,7 +2,6 @@ import React from "react";
 import ReactApexChart from "react-apexcharts";
 import { series } from "./Data";
 import { useNavigate } from "react-router-dom";
-import { getId } from "./LineCharts";
 const HeatMap = () => {
   const navigate = useNavigate();
   const res = series[0].data.map((num) => {
@@ -50,6 +49,11 @@ const HeatMap = () => {
     legend: {
       show: false,
     },
+    markers: {
+      onClick: function(e) {
+        console.log(e);
+      }
+    },
 
     chart: {
       width: 1000,
@@ -57,7 +61,6 @@ const HeatMap = () => {
       events: {
         click: function (event, chartContext, { dataPointIndex }) {
           navigate("/company");
-          getId(dataPointIndex)
         },
       },
     },
@@ -65,6 +68,7 @@ const HeatMap = () => {
       text: "Head Map",
       align: "center",
     },
+ 
   
     colors: res,      
 
