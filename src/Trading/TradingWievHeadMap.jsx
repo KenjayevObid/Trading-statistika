@@ -25,7 +25,7 @@ function TradingViewWidget() {
           "isZoomEnabled": true,
           "hasSymbolTooltip": false,
           "width": 1200,
-          "height": 700
+          "height": 600
         }`;
       container.current.appendChild(script);
     },
