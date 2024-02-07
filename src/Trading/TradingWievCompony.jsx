@@ -69,7 +69,7 @@ function TradingViewWidget() {
   );
 
   return (
-    <div className="tradingview-widget-container" ref={container}>
+    <div className="tradingview-widget-container" ref={container} style={{margin: "auto", marginTop: '50px'}} >
       <div className="tradingview-widget-container__widget"></div>
     </div>
   );
