@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="navbar">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/" className="nav-link">Home Page</Link>
         </li>
         <li className="nav-item">
           <Link to="/arexchart" className="nav-link">ArexChart</Link>

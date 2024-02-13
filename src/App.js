@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TradingWiev from "./Trading";
 import Navbar from "./Navbar";
 import ArexCharts from "./ArexCarts";
+import Home from './Home';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       <Router>
       <Navbar />
         <Routes>
-          <Route path="/" element={<h1>Home Page</h1>} />
+          <Route path="/" element={< Home />} />
           <Route path="/arexchart" element={<ArexCharts/>} />
           <Route path="/tradingwiev" element={<TradingWiev/>} />
         </Routes>
