@@ -1,13 +1,13 @@
-import React from "react";
 
-const Home = () => {
-  return (
-    <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-      <span style={{width: '400px', height: '400px', backgroundColor: 'crimson', textAlign: 'center'}}>
-       Assalomu Alaykum
-      </span>
-    </div>
-  );
-};
-
-export default Home;
+import Draggable from 'react-draggable'; 
+import React from 'react'
+  
+export default function Home() { 
+  return ( 
+    <div> 
+      <Draggable> 
+        <div style={{width: "200px", height: "200px", backgroundColor: "crimson"}}>Assalomu Alaykum</div> 
+      </Draggable> 
+    </div> 
+  ) 
+} 
